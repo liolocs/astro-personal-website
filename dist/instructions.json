@@ -1,0 +1,209 @@
+{
+  "name": "astro-personal-website",
+  "type": "single-use",
+  "description": "Personal website boilerplate with brutalism style",
+  "variables": {
+    "required": [
+      "projectName",
+      "name"
+    ],
+    "optional": [
+      "siteDescription",
+      "twitterHandle",
+      "linkedinHandle",
+      "youtubeHandle",
+      "githubHandle",
+      "email",
+      "profileImage",
+      "umamiWebsiteId"
+    ],
+    "defaults": {
+      "siteDescription": "Welcome to my website!"
+    }
+  },
+  "intent": [
+    "Create a personal static website with astro"
+  ],
+  "steps": [
+    {
+      "name": "create-",
+      "type": "create",
+      "file": "src/create/.gitignore",
+      "outputPath": ".gitignore"
+    },
+    {
+      "name": "create-.mcp",
+      "type": "create",
+      "file": "src/create/.mcp.json",
+      "outputPath": ".mcp.json"
+    },
+    {
+      "name": "create--2",
+      "type": "create",
+      "file": "src/create/.prettierignore",
+      "outputPath": ".prettierignore"
+    },
+    {
+      "name": "create--3",
+      "type": "create",
+      "file": "src/create/.prettierrc",
+      "outputPath": ".prettierrc"
+    },
+    {
+      "name": "create-README",
+      "type": "create",
+      "file": "src/create/README.md",
+      "outputPath": "README.md"
+    },
+    {
+      "name": "create-astro.config",
+      "type": "create",
+      "file": "src/create/astro.config.mjs",
+      "outputPath": "astro.config.mjs"
+    },
+    {
+      "name": "create-components",
+      "type": "create",
+      "file": "src/create/components.json",
+      "outputPath": "components.json"
+    },
+    {
+      "name": "create-eslint.config",
+      "type": "create",
+      "file": "src/create/eslint.config.js",
+      "outputPath": "eslint.config.js"
+    },
+    {
+      "name": "create-package",
+      "type": "dynamic-create",
+      "template": "src/dynamic-create/package.json.njk",
+      "outputPath": "package.json"
+    },
+    {
+      "name": "create-public-favicon",
+      "type": "create",
+      "file": "src/create/public/favicon.ico",
+      "outputPath": "public/favicon.ico"
+    },
+    {
+      "name": "create-public-favicon-svg",
+      "type": "create",
+      "file": "src/create/public/favicon.svg",
+      "outputPath": "public/favicon.svg"
+    },
+    {
+      "name": "create-public-site",
+      "type": "create",
+      "file": "src/create/public/site.webmanifest",
+      "outputPath": "public/site.webmanifest"
+    },
+    {
+      "name": "create-src-assets-blog-placeholder-2",
+      "type": "create",
+      "file": "src/create/src/assets/blog-placeholder-2.jpg",
+      "outputPath": "src/assets/blog-placeholder-2.jpg"
+    },
+    {
+      "name": "create-src-components-BaseHead",
+      "type": "dynamic-create",
+      "template": "src/dynamic-create/src/components/BaseHead.astro.njk",
+      "outputPath": "src/components/BaseHead.astro"
+    },
+    {
+      "name": "create-src-components-ModeToggle",
+      "type": "create",
+      "file": "src/create/src/components/ModeToggle.tsx",
+      "outputPath": "src/components/ModeToggle.tsx"
+    },
+    {
+      "name": "create-src-components-buttons-social-button",
+      "type": "create",
+      "file": "src/create/src/components/buttons/social-button.astro",
+      "outputPath": "src/components/buttons/social-button.astro"
+    },
+    {
+      "name": "create-src-components-icons-social-icons",
+      "type": "create",
+      "file": "src/create/src/components/icons/social-icons.tsx",
+      "outputPath": "src/components/icons/social-icons.tsx"
+    },
+    {
+      "name": "create-src-components-typography-heading",
+      "type": "create",
+      "file": "src/create/src/components/typography/heading.astro",
+      "outputPath": "src/components/typography/heading.astro"
+    },
+    {
+      "name": "create-src-components-ui-button",
+      "type": "create",
+      "file": "src/create/src/components/ui/button.tsx",
+      "outputPath": "src/components/ui/button.tsx"
+    },
+    {
+      "name": "create-src-components-ui-dropdown-menu",
+      "type": "create",
+      "file": "src/create/src/components/ui/dropdown-menu.tsx",
+      "outputPath": "src/components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "create-src-components-ui-separator",
+      "type": "create",
+      "file": "src/create/src/components/ui/separator.tsx",
+      "outputPath": "src/components/ui/separator.tsx"
+    },
+    {
+      "name": "create-src-consts",
+      "type": "dynamic-create",
+      "template": "src/dynamic-create/src/consts.ts.njk",
+      "outputPath": "src/consts.ts"
+    },
+    {
+      "name": "create-src-content.config",
+      "type": "create",
+      "file": "src/create/src/content.config.ts",
+      "outputPath": "src/content.config.ts"
+    },
+    {
+      "name": "create-src-content-pages-home",
+      "type": "dynamic-create",
+      "template": "src/dynamic-create/src/content/pages/home.mdx.ts",
+      "outputPath": "src/content/pages/home.mdx"
+    },
+    {
+      "name": "create-src-hooks-use-mobile",
+      "type": "create",
+      "file": "src/create/src/hooks/use-mobile.ts",
+      "outputPath": "src/hooks/use-mobile.ts"
+    },
+    {
+      "name": "create-src-layouts-main",
+      "type": "create",
+      "file": "src/create/src/layouts/main.astro",
+      "outputPath": "src/layouts/main.astro"
+    },
+    {
+      "name": "create-src-lib-utils",
+      "type": "create",
+      "file": "src/create/src/lib/utils.ts",
+      "outputPath": "src/lib/utils.ts"
+    },
+    {
+      "name": "create-src-pages-index",
+      "type": "dynamic-create",
+      "template": "src/dynamic-create/src/pages/index.astro.ts",
+      "outputPath": "src/pages/index.astro"
+    },
+    {
+      "name": "create-src-styles-global",
+      "type": "create",
+      "file": "src/create/src/styles/global.css",
+      "outputPath": "src/styles/global.css"
+    },
+    {
+      "name": "create-tsconfig",
+      "type": "create",
+      "file": "src/create/tsconfig.json",
+      "outputPath": "tsconfig.json"
+    }
+  ]
+}

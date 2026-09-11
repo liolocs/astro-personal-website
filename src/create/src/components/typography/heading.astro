@@ -1,0 +1,16 @@
+---
+import FallbackImage from "@/assets/blog-placeholder-2.jpg"
+
+const { title, image = FallbackImage } = Astro.props
+---
+
+<div class="mb-8 flex flex-col items-center justify-between gap-4">
+  {
+    image && (
+      <img src={image.src} alt={image.alt} class="m-0! size-36 rounded-full" />
+    )
+  }
+  <h1 class="m-0! text-right text-3xl font-semibold text-foreground">
+    {title}
+  </h1>
+</div>

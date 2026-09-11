@@ -1,0 +1,84 @@
+---
+import { Button } from "@/components/ui/button.tsx"
+import { SocialIcon } from "@/components/icons/social-icons.tsx"
+import type { SocialIcons } from "@/components/icons/social-icons.tsx"
+import { ArrowSquareOutIcon } from "@phosphor-icons/react"
+
+interface Props {
+  type: SocialIcons
+  handle: string
+}
+
+const { type, handle } = Astro.props
+
+const socialMap: Record<
+  SocialIcons,
+  { link: string; icon: SocialIcons; color: string }
+> = {
+  twitter: {
+    link: "https://twitter.com/" + handle,
+    icon: "twitter",
+    color: "bg-white",
+  },
+  linkedin: {
+    link: "https://linkedin.com/in/" + handle,
+    icon: "linkedin",
+    color: "bg-white",
+  },
+  youtube: {
+    link: "https://youtube.com/@" + handle,
+    icon: "youtube",
+    color: "bg-white",
+  },
+  twitch: {
+    link: "https://twitch.com/" + handle,
+    icon: "twitch",
+    color: "bg-white",
+  },
+  instagram: {
+    link: "https://instagram.com/" + handle,
+    icon: "instagram",
+    color: "bg-white",
+  },
+  threads: {
+    link: "https://threads.com/" + handle,
+    icon: "threads",
+    color: "bg-white",
+  },
+  discord: {
+    link: "https://discord.com/" + handle,
+    icon: "discord",
+    color: "bg-white",
+  },
+  github: {
+    link: "https://github.com/" + handle,
+    icon: "github",
+    color: "bg-white",
+  },
+  email: {
+    link: "mailto:" + handle,
+    icon: "email",
+    color: "bg-white",
+  },
+}
+
+const href = socialMap[type].link
+const icon = socialMap[type].icon
+const color = socialMap[type].color
+---
+
+<Button className={"flex w-full gap-4 p-0 " + color} size="lg">
+  <a
+    href={href}
+    target="_blank"
+    rel="noreferrer"
+    class:list={"grid w-full grid-cols-[50px_1fr_50px] items-center gap-4 fill-inherit! text-inherit no-underline"}
+    data-umami-event={`Social Button Clicked: ${type}`}
+  >
+    <SocialIcon name={icon} className="ml-2 size-6! fill-inherit" />
+    <span class="w-full">
+      <slot />
+    </span>
+    <ArrowSquareOutIcon className="size-6! justify-self-center fill-inherit" />
+  </a>
+</Button>

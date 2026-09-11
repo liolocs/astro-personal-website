@@ -1,0 +1,42 @@
+{
+  "name": "astro-personal-website",
+  "version": "1.0.0",
+  "description": "Personal website boilerplate with brutalism style",
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liolocs/astro-personal-website",
+    "directory": ""
+  },
+  "scripts": {
+    "build": "npx @liolocs/powerups-cli build",
+    "release": "commit-and-tag-version --preset conventionalcommits --path .",
+    "release:dry-run": "commit-and-tag-version --preset conventionalcommits --path . --dry-run"
+  },
+  "keywords": [
+    "powerups-package"
+  ],
+  "powerup": {
+    "instructions": "index.ts",
+    "compatibility": {}
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "@liolocs/powerups-sdk": "^1.1.1"
+  },
+  "devDependencies": {
+    "commit-and-tag-version": "^13.2.0"
+  }
+}

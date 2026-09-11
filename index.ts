@@ -5,9 +5,8 @@ const instructions: Instructions = {
   type: "single-use",
   description: "Personal website boilerplate with brutalism style",
   variables: {
-    required: ["projectName", "name"],
+    required: ["projectName", "name", "siteDescription"],
     optional: [
-      "siteDescription",
       "twitterHandle",
       "linkedinHandle",
       "youtubeHandle",
@@ -22,6 +21,12 @@ const instructions: Instructions = {
   },
   intent: ["Create a personal static website with astro"],
   steps: [
+   {
+    "type": "create",
+    "name": "create-.agents-skills-astro-SKILL",
+    "file": "src/create/.agents/skills/astro/SKILL.md",
+    "outputPath": ".agents/skills/astro/SKILL.md"
+  },
   {
     "type": "create",
     "name": "create-",
@@ -95,12 +100,6 @@ const instructions: Instructions = {
     "outputPath": "public/site.webmanifest"
   },
   {
-    "type": "create",
-    "name": "create-src-assets-blog-placeholder-2",
-    "file": "src/create/src/assets/blog-placeholder-2.jpg",
-    "outputPath": "src/assets/blog-placeholder-2.jpg"
-  },
-  {
     "name": "create-src-components-BaseHead",
     "type": "dynamic-create",
     "outputPath": "src/components/BaseHead.astro",
@@ -152,7 +151,7 @@ const instructions: Instructions = {
     "name": "create-src-consts",
     "type": "dynamic-create",
     "outputPath": "src/consts.ts",
-    "template": "src/dynamic-create/src/consts.ts.njk"
+    "template": "src/dynamic-create/src/consts.ts"
   },
   {
     "type": "create",

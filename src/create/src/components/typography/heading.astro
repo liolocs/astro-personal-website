@@ -1,7 +1,5 @@
 ---
-import FallbackImage from "@/assets/blog-placeholder-2.jpg"
-
-const { title, image = FallbackImage } = Astro.props
+const { title, image = "https://placehold.co/150x150?text=+" } = Astro.props
 ---
 
 <div class="mb-8 flex flex-col items-center justify-between gap-4">

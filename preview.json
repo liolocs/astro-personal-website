@@ -1,0 +1,8 @@
+{
+  "variables": {
+    "projectName": "emmas-website",
+    "name": "Emma's personal website",
+    "siteDescription": "Emma's personal website"
+  },
+  "exec": "pnpm install && pnpm dev"
+}

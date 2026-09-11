@@ -14,6 +14,7 @@
   },
   "scripts": {
     "build": "npx @liolocs/powerups-cli build",
+    "dev": "npx @liolocs/powerups-cli author preview",
     "release": "commit-and-tag-version --preset conventionalcommits --path .",
     "release:dry-run": "commit-and-tag-version --preset conventionalcommits --path . --dry-run"
   },

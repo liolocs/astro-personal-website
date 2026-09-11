@@ -160,12 +160,6 @@ const instructions: Instructions = {
     "outputPath": "src/content.config.ts"
   },
   {
-    "name": "create-src-content-pages-home",
-    "type": "dynamic-create",
-    "outputPath": "src/content/pages/home.mdx",
-    "template": "src/dynamic-create/src/content/pages/home.mdx.ts"
-  },
-  {
     "type": "create",
     "name": "create-src-hooks-use-mobile",
     "file": "src/create/src/hooks/use-mobile.ts",

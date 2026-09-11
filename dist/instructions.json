@@ -5,10 +5,10 @@
   "variables": {
     "required": [
       "projectName",
-      "name"
+      "name",
+      "siteDescription"
     ],
     "optional": [
-      "siteDescription",
       "twitterHandle",
       "linkedinHandle",
       "youtubeHandle",
@@ -25,6 +25,12 @@
     "Create a personal static website with astro"
   ],
   "steps": [
+    {
+      "name": "create-.agents-skills-astro-SKILL",
+      "type": "create",
+      "file": "src/create/.agents/skills/astro/SKILL.md",
+      "outputPath": ".agents/skills/astro/SKILL.md"
+    },
     {
       "name": "create-",
       "type": "create",
@@ -98,12 +104,6 @@
       "outputPath": "public/site.webmanifest"
     },
     {
-      "name": "create-src-assets-blog-placeholder-2",
-      "type": "create",
-      "file": "src/create/src/assets/blog-placeholder-2.jpg",
-      "outputPath": "src/assets/blog-placeholder-2.jpg"
-    },
-    {
       "name": "create-src-components-BaseHead",
       "type": "dynamic-create",
       "template": "src/dynamic-create/src/components/BaseHead.astro.njk",
@@ -154,7 +154,7 @@
     {
       "name": "create-src-consts",
       "type": "dynamic-create",
-      "template": "src/dynamic-create/src/consts.ts.njk",
+      "template": "src/dynamic-create/src/consts.ts",
       "outputPath": "src/consts.ts"
     },
     {
@@ -162,12 +162,6 @@
       "type": "create",
       "file": "src/create/src/content.config.ts",
       "outputPath": "src/content.config.ts"
-    },
-    {
-      "name": "create-src-content-pages-home",
-      "type": "dynamic-create",
-      "template": "src/dynamic-create/src/content/pages/home.mdx.ts",
-      "outputPath": "src/content/pages/home.mdx"
     },
     {
       "name": "create-src-hooks-use-mobile",

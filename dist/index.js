@@ -19905,9 +19905,8 @@ var instructions = {
   type: "single-use",
   description: "Personal website boilerplate with brutalism style",
   variables: {
-    required: ["projectName", "name"],
+    required: ["projectName", "name", "siteDescription"],
     optional: [
-      "siteDescription",
       "twitterHandle",
       "linkedinHandle",
       "youtubeHandle",
@@ -19922,6 +19921,12 @@ var instructions = {
   },
   intent: ["Create a personal static website with astro"],
   steps: [
+    {
+      "type": "create",
+      "name": "create-.agents-skills-astro-SKILL",
+      "file": "src/create/.agents/skills/astro/SKILL.md",
+      "outputPath": ".agents/skills/astro/SKILL.md"
+    },
     {
       "type": "create",
       "name": "create-",
@@ -19995,12 +20000,6 @@ var instructions = {
       "outputPath": "public/site.webmanifest"
     },
     {
-      "type": "create",
-      "name": "create-src-assets-blog-placeholder-2",
-      "file": "src/create/src/assets/blog-placeholder-2.jpg",
-      "outputPath": "src/assets/blog-placeholder-2.jpg"
-    },
-    {
       "name": "create-src-components-BaseHead",
       "type": "dynamic-create",
       "outputPath": "src/components/BaseHead.astro",
@@ -20052,19 +20051,13 @@ var instructions = {
       "name": "create-src-consts",
       "type": "dynamic-create",
       "outputPath": "src/consts.ts",
-      "template": "src/dynamic-create/src/consts.ts.njk"
+      "template": "src/dynamic-create/src/consts.ts"
     },
     {
       "type": "create",
       "name": "create-src-content.config",
       "file": "src/create/src/content.config.ts",
       "outputPath": "src/content.config.ts"
-    },
-    {
-      "name": "create-src-content-pages-home",
-      "type": "dynamic-create",
-      "outputPath": "src/content/pages/home.mdx",
-      "template": "src/dynamic-create/src/content/pages/home.mdx.ts"
     },
     {
       "type": "create",

@@ -1,17 +1,24 @@
 export default function (_variables: Record<string, string>): string {
+  const DEFAULT_PROFILE_IMAGE = "https://placehold.co/150x150?text=+";
+
   const socials: Array<[string, string, string]> = [];
+
   if (_variables.twitterHandle) {
     socials.push(["twitter", _variables.twitterHandle, `Twitter @${_variables.twitterHandle}`]);
   }
+
   if (_variables.linkedinHandle) {
     socials.push(["linkedin", _variables.linkedinHandle, "LinkedIn"]);
   }
+
   if (_variables.youtubeHandle) {
     socials.push(["youtube", _variables.youtubeHandle, `Youtube @${_variables.youtubeHandle}`]);
   }
+
   if (_variables.githubHandle) {
     socials.push(["github", _variables.githubHandle, `Github @${_variables.githubHandle}`]);
   }
+
   if (_variables.email) {
     socials.push(["email", _variables.email, "Email me"]);
   }
@@ -25,9 +32,7 @@ export default function (_variables: Record<string, string>): string {
     )
     .join("\n\n");
 
-  const imageProp = _variables.profileImage
-    ? `\n    image={{ src: "${_variables.profileImage}", alt: "Profile Picture" }}`
-    : "";
+  const imageProp = `\n    image={{ src: "${_variables.profileImage || DEFAULT_PROFILE_IMAGE}", alt: "Profile Picture" }}`
 
   return `---
 import Layout from "@/layouts/main.astro"

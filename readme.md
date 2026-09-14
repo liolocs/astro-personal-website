@@ -17,8 +17,12 @@ Run the following commands:
 npx @liolocs/powerups-cli install npm:@liolocs/astro-personal-website
 
 # Use the powerup
-npx @liolocs/powerups-cli use @liolocs/astro-personal-website --project-name=my-website --name="My Website" --site-description="My personal website" --twitter-handle=unsheepd
+npx @liolocs/powerups-cli use @liolocs/astro-personal-website --project-name=my-website --name="My Website" --site-description="My personal website" --twitter-handle=unsheepd --email "some@email.com"
 ```
+
+Running the above commands will create a new project that looks like
+
+![Project preview](./output.png)
 
 ## Available variables for this powerup:
 

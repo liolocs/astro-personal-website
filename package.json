@@ -1,7 +1,7 @@
 {
   "name": "astro-personal-website",
   "version": "1.0.0",
-  "description": "Personal website boilerplate with brutalism style",
+  "description": "Personal website boilerplate made in astro with brutalism UI style",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
@@ -13,10 +13,11 @@
     "directory": ""
   },
   "scripts": {
-    "build": "npx @liolocs/powerups-cli build",
+    "build": "npx @liolocs/powerups-cli author build",
     "dev": "npx @liolocs/powerups-cli author preview",
     "release": "commit-and-tag-version --preset conventionalcommits --path .",
-    "release:dry-run": "commit-and-tag-version --preset conventionalcommits --path . --dry-run"
+    "release:dry-run": "commit-and-tag-version --preset conventionalcommits --path . --dry-run",
+    "setup": "bash ./scripts/create-github-repo.sh"
   },
   "keywords": [
     "powerups-package"

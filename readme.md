@@ -17,7 +17,7 @@ Run the following commands:
 npx @liolocs/powerups-cli install npm:@liolocs/astro-personal-website
 
 # Use the powerup
-npx @liolocs/powerups-cli use @liolocs/astro-personal-website <variables-here>
+npx @liolocs/powerups-cli use @liolocs/astro-personal-website --project-name=my-website --name="My Website" --site-description="My personal website" --twitter-handle=unsheepd
 ```
 
 ## Available variables for this powerup:

@@ -22,7 +22,7 @@ npx @liolocs/powerups-cli use @liolocs/astro-personal-website <variables-here>
 
 ## Available variables for this powerup:
 
-|| Variable || Description || Required || Default ||
+| Variable | Description | Required | Default |
 | --- | --- | --- | --- |
 | projectName | The name of your project | Yes | |
 | name | The name of your website | Yes | |

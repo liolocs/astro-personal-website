@@ -1,5 +1,5 @@
 {
-  "name": "astro-personal-website",
+  "name": "@liolocs/astro-personal-website",
   "version": "1.0.0",
   "description": "Personal website boilerplate made in astro with brutalism UI style",
   "type": "module",

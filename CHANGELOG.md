@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.3](https://github.com/liolocs/astro-personal-website/compare/v1.0.2...v1.0.3) (2026-09-15)
+
+### Bug Fixes
+
+* remove index.js from build ([6b10bee](https://github.com/liolocs/astro-personal-website/commit/6b10bee0227280a90c4429921dc8318ad5187c1c))
 ## [1.0.2](https://github.com/liolocs/astro-personal-website/compare/v1.0.1...v1.0.2) (2026-09-14)
 
 ### Bug Fixes
